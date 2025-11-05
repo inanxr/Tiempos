@@ -1,91 +1,171 @@
 # My Fonts via GitHub + jsDelivr (Starter)
 
-Follow these steps **exactly** to host your fonts and use them anywhere with a single `<link>`:
+Host all your custom fonts — like **Tiempos**, **Gill Sans Pro**, **Futura LT**, **Inter**, **Helvetica**, and more — directly from GitHub and use them anywhere on the web with a single `<link>` tag.
 
 ---
 
-## 1) Prepare your files
-- Convert your fonts to **.woff2** (best format). If you only have .ttf/.otf, export or convert to .woff2 using your font editor or a trusted local converter.
-- Rename files clearly, e.g.:
-  - `MyFont-Regular.woff2`
-  - `MyFont-Italic.woff2`
-  - `MyFont-Bold.woff2`
-  - or a single `MyFont-Variable.woff2` (variable font).
+## 1) Prepare your font files
 
-Put them into the `fonts/` folder in this repository.
+✅ **Recommended format:** `.woff2`  
+If your fonts are `.otf` or `.ttf`, convert them locally using your font editor or a trusted converter.
+
+Use clear names for each weight and style, for example:
+```
+
+MyFont-Regular.woff2
+MyFont-Italic.woff2
+MyFont-Bold.woff2
+MyFont-Variable.woff2  ← (for variable fonts)
+
+```
+
+Organize fonts in folders like this:
+```
+
+fonts/
+├── TiemposText/
+├── TiemposHeadline/
+├── TiemposFine/
+├── Gill Sans Pro/
+├── Futura LT/
+├── Helvetica/
+├── Inter/
+└── etc.
+
+````
 
 ---
 
-## 2) Update `fonts.css`
-- Open `fonts.css` and replace the file names with your actual names.
-- If you use a **variable font**, comment out the static blocks and **uncomment** the variable block. Update the weight range (e.g. `100 900`).
+## 2) Edit `fonts.css`
+
+Open `fonts.css` and make sure:
+- Each `@font-face` block points to the correct file paths (e.g. `./fonts/TiemposText/TiemposText-Regular.otf`).
+- If you’re using variable fonts, **comment out** the static sections and **uncomment** the variable ones.
+- The `:root` block at the bottom defines CSS variables like:
+  ```css
+  :root {
+    --tiempos-text: 'Tiempos Text', serif;
+    --helvetica: 'Helvetica LT Std', Arial, sans-serif;
+    --inter: 'Inter', system-ui, sans-serif;
+  }
+````
 
 ---
 
 ## 3) Create a GitHub repository and push
-Option A — **GitHub website UI** (no CLI needed)
-1. Create a new public repo on GitHub (e.g. `my-fonts`).
-2. Upload these files/folders from this starter:
-   - `fonts.css`
-   - `index.html` (for testing)
-   - `fonts/` (your .woff2 files inside)
+
+### Option A — GitHub UI (no CLI)
+
+1. Create a new **public** repo (e.g. `fonts-cdn`).
+2. Upload these:
+
+   * `fonts.css`
+   * `index.html` (for demo)
+   * `fonts/` folder (with all your font files)
 3. Commit to the **main** branch.
 
-Option B — **Git command line**
+### Option B — Command Line
+
 ```bash
 git init
 git add .
-git commit -m "Initial fonts CDN"
+git commit -m "Initial fonts CDN setup"
 git branch -M main
-git remote add origin https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPO.git
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
 git push -u origin main
 ```
 
 ---
 
-## 4) Link your CSS via jsDelivr
-Use this pattern (replace the placeholders):  
+## 4) Link your hosted CSS via jsDelivr
+
+You can now load your fonts anywhere with:
+
 ```
-https://cdn.jsdelivr.net/gh/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPO@main/fonts.css
+https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO@main/fonts.css
 ```
-**Add to any website's `<head>`:**
+
+### Example:
+
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPO@main/fonts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/inanxr/Tiempos@main/fonts.css">
 ```
 
-**(Optional) Pin to a specific commit for stability:**
-1. Open your repo on GitHub → press `Y` (or copy the URL with the full commit SHA shown in the file view).
-2. Replace `@main` with `@COMMIT_SHA`:
-```
-https://cdn.jsdelivr.net/gh/USER/REPO@COMMIT_SHA/fonts.css
-```
+**(Optional)** Pin to a specific commit for stability:
 
-**(Optional) Cache-bust** when you change fonts.css (so visitors get the latest):
+1. Open your repo → press **Y** on GitHub to freeze the commit URL.
+2. Replace `@main` with your commit SHA:
+
+   ```
+   https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO@COMMIT_SHA/fonts.css
+   ```
+
+**(Optional)** Cache-bust when you update:
+
 ```
 .../fonts.css?v=2
 ```
 
 ---
 
-## 5) Use the font in your CSS
+## 5) Use the fonts in your website
+
 ```css
 body {
-  font-family: 'MyFont', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: 'Tiempos Text', serif;
 }
-/* For variable font sample:
-body { font-family: 'MyFontVF', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-*/
+
+h1 {
+  font-family: 'Tiempos Headline', serif;
+  font-weight: 700;
+}
+
+.nav {
+  font-family: 'Gill Sans Pro', sans-serif;
+}
+
+.smallprint {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+```
+
+Or use your global variables defined in `:root`:
+
+```css
+body { font-family: var(--tiempos-text); }
+h2  { font-family: var(--helvetica); }
 ```
 
 ---
 
-## 6) Test quickly
-- Open `index.html` directly (local) to preview your fonts.
-- Or visit `https://cdn.jsdelivr.net/gh/USER/REPO@main/index.html` (note: HTML via jsDelivr works, but use it only for quick tests).
+## 6) Quick testing
+
+* Open `index.html` locally to preview your setup.
+* Or test it live:
+
+  ```
+  https://cdn.jsdelivr.net/gh/YOUR_USERNAME/YOUR_REPO@main/index.html
+  ```
+
+*(Note: jsDelivr serves HTML fine for testing, but don’t use it for production sites.)*
 
 ---
 
 ## Notes
-- **CORS**: jsDelivr serves with proper CORS headers; you can use the CSS cross-site without extra server config.
-- **Privacy/licensing**: Only publish fonts you have rights to distribute. For public repos, your font files are downloadable by anyone.
-- **Formats**: `.woff2` is enough for modern browsers. Add `.woff` for older browser support if you must.
+
+* **CORS:** jsDelivr is already CORS-enabled, so your fonts will load cross-domain automatically.
+* **Licensing:** Only publish fonts you have redistribution rights for.
+  Commercial fonts (e.g. Helvetica, Futura LT, Garamond Premier, Neo Sans, Gill Sans Pro) should remain private or be hosted under license.
+* **Performance:** `.woff2` is ideal for web delivery — smaller and faster.
+  You can keep `.otf` for full-quality backups or local use.
+* **Cache:** jsDelivr caches aggressively; use versioned URLs when you update fonts.
+
+---
+
+**Enjoy your personal Google-Fonts-style CDN** — fully powered by GitHub + jsDelivr 🚀
+All you need is one link:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/inanxr/Tiempos@main/fonts.css">
+```

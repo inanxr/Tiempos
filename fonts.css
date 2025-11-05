@@ -225,6 +225,17 @@
   font-display: swap;
 }
 
+/* ---------------------------
+   REFINITY
+--------------------------- */
+@font-face {
+  font-family: 'Refinity';
+  src: url('./fonts/Refinity/Refinity-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================================
    ADDITIONAL FONTS (Gill Sans Pro, Burgundia, Futura LT,
    Garamond Premier Pro, Jost, Montserrat, Neo Sans/Neo Tech,
@@ -430,6 +441,7 @@
   --tiempos-text: 'Tiempos Text', serif;
   --tiempos-headline: 'Tiempos Headline', serif;
   --tiempos-fine: 'Tiempos Fine', serif;
+  --refinity: 'Refinity', serif;
   --gill-sans:'Gill Sans Pro',sans-serif;
   --futura:'Futura LT',sans-serif;
   --garamond-premier:'Garamond Premier Pro',serif;
