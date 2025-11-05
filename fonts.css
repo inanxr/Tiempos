@@ -1,54 +1,239 @@
-/* ===============================
-   Your self-hosted fonts via jsDelivr
-   HOW TO USE:
-   1) Drop your .woff2 files into /fonts (Regular/Bold/etc. or a single variable font).
-   2) Update the file names below to match your files.
-   3) Commit to GitHub. Then link this CSS via jsDelivr:
-      https://cdn.jsdelivr.net/gh/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPO@main/fonts.css
-   =============================== */
+/* ============================================
+   Tiempos Fonts – Self-hosted via jsDelivr CDN
+   https://cdn.jsdelivr.net/gh/inanxr/Tiempos@main/fonts.css
+   ============================================ */
 
-/* --- Static fonts example (comment out if using a variable font) --- */
+/* ---------------------------
+   TIEMPOS TEXT FAMILY
+--------------------------- */
 @font-face {
-  font-family: 'MyFont';
-  src: url('./fonts/MyFont-Regular.woff2') format('woff2');
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'MyFont';
-  src: url('./fonts/MyFont-Italic.woff2') format('woff2');
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-RegularItalic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'MyFont';
-  src: url('./fonts/MyFont-Bold.woff2') format('woff2');
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
-/* --- Variable font example (use this block instead of the static ones above) ---
 @font-face {
-  font-family: 'MyFontVF';
-  src: url('./fonts/MyFont-Variable.woff2') format('woff2');
-  font-weight: 100 900;        /* Update range to your variable font axis */
-  font-stretch: 75% 125%;      /* Optional if your VF supports width axis */
-  font-style: normal;          /* Or 0deg 12deg if slnt/ital used */
+  font-family: 'Tiempos Text';
+  src: url('./fonts/TiemposText/TiemposText-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
   font-display: swap;
 }
-*/
 
-/* Base usage (pick ONE of 'MyFont' or 'MyFontVF' depending on what you used above) */
+/* ---------------------------
+   TIEMPOS HEADLINE FAMILY
+--------------------------- */
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Headline';
+  src: url('./fonts/TiemposHeadline/TiemposHeadline-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------------------------
+   TIEMPOS FINE FAMILY
+--------------------------- */
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Tiempos Fine';
+  src: url('./fonts/TiemposFine/TiemposFine-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------------------------
+   BASE USAGE
+--------------------------- */
 :root {
-  --my-font: 'MyFont', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  /* Or: --my-font: 'MyFontVF', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; */
+  --tiempos-text: 'Tiempos Text', serif;
+  --tiempos-headline: 'Tiempos Headline', serif;
+  --tiempos-fine: 'Tiempos Fine', serif;
 }
 
 body {
-  font-family: var(--my-font);
+  font-family: var(--tiempos-text);
 }
