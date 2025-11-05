@@ -1,0 +1,54 @@
+/* ===============================
+   Your self-hosted fonts via jsDelivr
+   HOW TO USE:
+   1) Drop your .woff2 files into /fonts (Regular/Bold/etc. or a single variable font).
+   2) Update the file names below to match your files.
+   3) Commit to GitHub. Then link this CSS via jsDelivr:
+      https://cdn.jsdelivr.net/gh/REPLACE_WITH_YOUR_GITHUB_USERNAME/REPLACE_WITH_YOUR_REPO@main/fonts.css
+   =============================== */
+
+/* --- Static fonts example (comment out if using a variable font) --- */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./fonts/MyFont-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./fonts/MyFont-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./fonts/MyFont-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Variable font example (use this block instead of the static ones above) ---
+@font-face {
+  font-family: 'MyFontVF';
+  src: url('./fonts/MyFont-Variable.woff2') format('woff2');
+  font-weight: 100 900;        /* Update range to your variable font axis */
+  font-stretch: 75% 125%;      /* Optional if your VF supports width axis */
+  font-style: normal;          /* Or 0deg 12deg if slnt/ital used */
+  font-display: swap;
+}
+*/
+
+/* Base usage (pick ONE of 'MyFont' or 'MyFontVF' depending on what you used above) */
+:root {
+  --my-font: 'MyFont', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  /* Or: --my-font: 'MyFontVF', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; */
+}
+
+body {
+  font-family: var(--my-font);
+}
