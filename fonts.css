@@ -225,13 +225,224 @@
   font-display: swap;
 }
 
+/* ============================================
+   ADDITIONAL FONTS (Gill Sans Pro, Burgundia, Futura LT,
+   Garamond Premier Pro, Jost, Montserrat, Neo Sans/Neo Tech,
+   Supply, Syne, Helvetica (LT Std, World, Neue LT Com), Inter)
+   Paths match your repo structure from the PowerShell listing.
+   ============================================ */
+
 /* ---------------------------
-   BASE USAGE
+   GILL SANS PRO (MT Pro)
+--------------------------- */
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Book.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-BookItalic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-ExtraBold.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Heavy.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-HeavyItalic.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro';src:url('./fonts/Gill Sans Pro/GillSansMTPro-UltraBold.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap;}
+
+@font-face{font-family:'Gill Sans Pro Display';src:url('./fonts/Gill Sans Pro/GillSansDisplayMTPro-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Display';src:url('./fonts/Gill Sans Pro/GillSansDisplayMTPro-ExBd.otf') format('opentype');font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Display';src:url('./fonts/Gill Sans Pro/GillSansDisplayMTPro-BdCn.otf') format('opentype');font-weight:700;font-style:normal;font-stretch:condensed;font-display:swap;}
+
+@font-face{font-family:'Gill Sans Pro Condensed';src:url('./fonts/Gill Sans Pro/GillSansMTPro-Condensed.otf') format('opentype');font-weight:400;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Condensed';src:url('./fonts/Gill Sans Pro/GillSansMTPro-BoldCondensed.otf') format('opentype');font-weight:700;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Condensed';src:url('./fonts/Gill Sans Pro/GillSansMTPro-UltraBoldCond.otf') format('opentype');font-weight:900;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Condensed';src:url('./fonts/Gill Sans Pro/GillSansMTPro-BoldExtCond.otf') format('opentype');font-weight:700;font-style:normal;font-stretch:expanded;font-display:swap;}
+
+/* (Optional decorative) Shadow styles */
+@font-face{font-family:'Gill Sans Pro Shadow';src:url('./fonts/Gill Sans Pro/GillSansShadowMTPro.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Gill Sans Pro Shadow';src:url('./fonts/Gill Sans Pro/GillSansShadowedMTPro-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+
+/* ---------------------------
+   BURGUNDIA
+--------------------------- */
+@font-face{font-family:'Burgundia';src:url('./fonts/Burgundia/Burgundia-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+
+/* ---------------------------
+   FUTURA LT
+--------------------------- */
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-Oblique.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-LightOblique.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-Book.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-BookOblique.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-ExtraBoldOblique.ttf') format('truetype');font-weight:800;font-style:italic;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-Heavy.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Futura LT';src:url('./fonts/Futura LT/FuturaLT-HeavyOblique.ttf') format('truetype');font-weight:900;font-style:italic;font-display:swap;}
+
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-Condensed.ttf') format('truetype');font-weight:400;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedOblique.ttf') format('truetype');font-weight:400;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedLight.ttf') format('truetype');font-weight:300;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedLightObl.ttf') format('truetype');font-weight:300;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedBold.ttf') format('truetype');font-weight:700;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedBoldOblique.ttf') format('truetype');font-weight:700;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondensedExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Futura LT Condensed';src:url('./fonts/Futura LT/FuturaLT-CondExtraBoldObl.ttf') format('truetype');font-weight:800;font-style:italic;font-stretch:condensed;font-display:swap;}
+
+/* ---------------------------
+   GARAMOND PREMIER PRO (subset)
+--------------------------- */
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-It.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-Med.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-MedIt.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-Smbd.otf') format('opentype');font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-SmbdIt.otf') format('opentype');font-weight:600;font-style:italic;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-Bd.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Garamond Premier Pro';src:url('./fonts/Garamond Premier/GaramondPremrPro-BdIt.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+
+/* ---------------------------
+   JOST
+--------------------------- */
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-100-Hairline.ttf') format('truetype');font-weight:100;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-100-HairlineItalic.ttf') format('truetype');font-weight:100;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-200-Thin.ttf') format('truetype');font-weight:200;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-200-ThinItalic.ttf') format('truetype');font-weight:200;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-300-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-300-LightItalic.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-400-Book.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-400-BookItalic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-500-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-500-MediumItalic.ttf') format('truetype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-600-Semi.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-600-SemiItalic.ttf') format('truetype');font-weight:600;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-700-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-700-BoldItalic.ttf') format('truetype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-800-Heavy.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-800-HeavyItalic.ttf') format('truetype');font-weight:800;font-style:italic;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-900-Black.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Jost';src:url('./fonts/Jost/Jost-900-BlackItalic.ttf') format('truetype');font-weight:900;font-style:italic;font-display:swap;}
+
+/* ---------------------------
+   MONTSERRAT (Variable)
+--------------------------- */
+@font-face{font-family:'Montserrat';src:url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Montserrat';src:url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:italic;font-display:swap;}
+
+/* ---------------------------
+   NEO SANS / NEO TECH
+--------------------------- */
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-Black.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Sans';src:url('./fonts/Neo Sans/NeoSans-BlackItalic.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap;}
+
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-Italic.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-LightItalic.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-MediumItalic.otf') format('opentype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-BoldItalic.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-Black.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neo Tech';src:url('./fonts/Neo Sans/NeoTech-BlackItalic.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap;}
+
+/* ---------------------------
+   SUPPLY
+--------------------------- */
+@font-face{font-family:'Supply';src:url('./fonts/Supply/Supply-UltraLight.otf') format('opentype');font-weight:100;font-style:normal;font-display:swap;}
+@font-face{font-family:'Supply';src:url('./fonts/Supply/Supply-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Supply';src:url('./fonts/Supply/Supply-Regular.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Supply';src:url('./fonts/Supply/Supply-Medium.otf') format('opentype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Supply';src:url('./fonts/Supply/Supply-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+
+/* ---------------------------
+   SYNE (Variable)
+--------------------------- */
+@font-face{font-family:'Syne';src:url('./fonts/Syne/Syne-VariableFont_wght.ttf') format('truetype');font-weight:400 800;font-style:normal;font-display:swap;}
+
+/* ---------------------------
+   HELVETICA (LT Std + Rounded + World + Neue LT Com)
+   NOTE: Commercial families — ensure you have redistribution rights before public hosting.
+--------------------------- */
+/* Helvetica LT Std core */
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Roman.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Obl.otf') format('opentype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Light.otf') format('opentype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-LightObl.otf') format('opentype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Bold.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-BoldObl.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Blk.otf') format('opentype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-BlkObl.otf') format('opentype');font-weight:900;font-style:italic;font-display:swap;}
+
+/* Condensed */
+@font-face{font-family:'Helvetica LT Std Condensed';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-Cond.otf') format('opentype');font-weight:400;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std Condensed';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-CondObl.otf') format('opentype');font-weight:400;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std Condensed';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-BoldCond.otf') format('opentype');font-weight:700;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Helvetica LT Std Condensed';src:url('./fonts/Helvetica/Helvetica/HelveticaLTStd-BoldCondObl.otf') format('opentype');font-weight:700;font-style:italic;font-stretch:condensed;font-display:swap;}
+
+/* Rounded */
+@font-face{font-family:'Helvetica Rounded LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaRoundedLTStd-Bd.otf') format('opentype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica Rounded LT Std';src:url('./fonts/Helvetica/Helvetica/HelveticaRoundedLTStd-BdO.otf') format('opentype');font-weight:700;font-style:italic;font-display:swap;}
+
+/* Helvetica World */
+@font-face{font-family:'Helvetica World';src:url('./fonts/Helvetica/Helvetica World/HelveticaWorld-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica World';src:url('./fonts/Helvetica/Helvetica World/HelveticaWorld-Italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Helvetica World';src:url('./fonts/Helvetica/Helvetica World/HelveticaWorld-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Helvetica World';src:url('./fonts/Helvetica/Helvetica World/HelveticaWorld-BoldItalic.ttf') format('truetype');font-weight:700;font-style:italic;font-display:swap;}
+
+/* Neue Helvetica (LT Com) — core + condensed */
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Roman.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-It.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Lt.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-LtIt.ttf') format('truetype');font-weight:300;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Md.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-MdIt.ttf') format('truetype');font-weight:500;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Bd.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-BdIt.ttf') format('truetype');font-weight:700;font-style:italic;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Blk.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Neue Helvetica';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-BlkIt.ttf') format('truetype');font-weight:900;font-style:italic;font-display:swap;}
+
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-Cn.ttf') format('truetype');font-weight:400;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-CnO.ttf') format('truetype');font-weight:400;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-BdCn.ttf') format('truetype');font-weight:700;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-BdCnO.ttf') format('truetype');font-weight:700;font-style:italic;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-XBlkCn.ttf') format('truetype');font-weight:950;font-style:normal;font-stretch:condensed;font-display:swap;}
+@font-face{font-family:'Neue Helvetica Condensed';src:url('./fonts/Helvetica/Neue Helvetica/HelveticaNeueLTCom-XBlkCnO.ttf') format('truetype');font-weight:950;font-style:italic;font-stretch:condensed;font-display:swap;}
+
+/* ---------------------------
+   INTER (Variable)
+--------------------------- */
+@font-face{font-family:'Inter';src:url('./fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Inter';src:url('./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:italic;font-display:swap;}
+
+/* ---------------------------
+   BASE FAMILY ALIASES (Optional)
 --------------------------- */
 :root {
   --tiempos-text: 'Tiempos Text', serif;
   --tiempos-headline: 'Tiempos Headline', serif;
   --tiempos-fine: 'Tiempos Fine', serif;
+  --gill-sans:'Gill Sans Pro',sans-serif;
+  --futura:'Futura LT',sans-serif;
+  --garamond-premier:'Garamond Premier Pro',serif;
+  --jost:'Jost',sans-serif;
+  --montserrat:'Montserrat',sans-serif;
+  --neo-sans:'Neo Sans',sans-serif;
+  --neo-tech:'Neo Tech',sans-serif;
+  --supply:'Supply',sans-serif;
+  --syne:'Syne',sans-serif;
+  --helvetica:'Helvetica LT Std',Arial,sans-serif;
+  --helvetica-neue:'Neue Helvetica',Arial,sans-serif;
+  --helvetica-world:'Helvetica World',Arial,sans-serif;
+  --inter:'Inter',system-ui,sans-serif;
 }
 
 body {
